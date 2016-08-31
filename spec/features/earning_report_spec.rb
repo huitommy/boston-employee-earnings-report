@@ -21,4 +21,22 @@ feature "User views show page for job" do
     expect(page).to have_content "Clerk Of Works"
     expect(page).to have_content "Average Salary"
   end
+
+  scenario "user puts in a title" do
+    visit '/teacher'
+
+    expect(page).to have_content "Job titles matching your search"
+    expect(page).to have_content "Teacher I"
+    expect(page).to have_content "Substitute Teacher"
+    expect(page).to have_content "Asst Teacher"
+    expect(page).to have_content "Head Teacher"
+    expect(page).to have_content "Average Salary"
+  end
+
+  scenario "user puts in a title that does not exist" do
+    visit '/apples'
+
+    expect(page).to have_content "Job titles matching your search"
+    expect(page).to have_content "Average Salary: $ 0.00"
+  end
 end

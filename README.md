@@ -10,7 +10,7 @@ Coding challenge for Teikametrics
 
 ```no-highlight
 # Clone down this template
-git clone  <YOUR_APP_NAME>
+git clone https://github.com/huitommy/boston-employee-earnings-report.git <YOUR_APP_NAME>
 
 # Move into your app's directory
 cd <YOUR_APP_NAME>

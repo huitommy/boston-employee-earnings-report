@@ -3,8 +3,9 @@ require "sinatra/base"
 require 'json'
 
 class EarningReport < Sinatra::Base
-  get '/' do
-    @title = "Hello World"
+  get "/" do
+    earnings = Earning.all.uniq { |e| e.title }
+    @job_titles = earnings.map { |j| j.title }
     erb :index
   end
 end

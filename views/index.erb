@@ -1,1 +1,9 @@
-<%= @title %>
+<h1> Boston Employee Job Titles: </h1>
+
+<ul>
+  <% @job_titles.each do |title| %>
+    <li>
+      <%= title %></a>
+    </li>
+  <% end %>
+</ul>

@@ -45,6 +45,10 @@ A show page for the job title, with a list of all the partial matches for the jo
  `GET` http://localhost:9292/:title
 * **URL Params required:** `title`
   * Example: http://localhost:9292/teacher
+* **Success Response:**
+  * {"title": "teacher", "average_earnings": 66357.64518910472}
+* **Error Response:**
+  * {"error": {"code":404,"message":"Job title not found"} }
 
 ## Technology Used
 

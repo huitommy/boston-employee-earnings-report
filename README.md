@@ -1,5 +1,9 @@
 # boston-employee-earnings-report
 
+A simple web API using the 2014 Boston Employee Earnings Report. When given a job title, it will respond with the average salary for that position (HTML or JSON).
+
+All data is provided by https://dev.socrata.com/foundry/data.cityofboston.gov/ntv7-hwjm
+
 Coding challenge for Teikametrics
 
 ## Getting Started
@@ -41,3 +45,12 @@ A show page for the job title, with a list of all the partial matches for the jo
  `GET` http://localhost:9292/:title
 * **URL Params required:** `title`
   * Example: http://localhost:9292/teacher
+
+## Technology Used
+
+Application was built with Sinatra, and tests were done with RSpec, Capybara, and VCR for stubbing. Sinatra was used because of the simplicity of the application. If I had additional time, I would implement a search field on the index page that would should the details for the job title typed using AJAX. I would also add more thorough tests.
+
+## Personal Links
+
+* [LinkedIn](https://www.linkedin.com/in/huitommy)
+* [Current Side Project](https://github.com/evanlouden/exReg)

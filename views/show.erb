@@ -1,0 +1,13 @@
+<p>
+  Job titles matching your search: <%= @job %>
+</p>
+
+<% @job_titles.each do |title| %>
+  <li>
+    <%= title %>
+  </li>
+<% end %>
+
+<p>
+  Average Salary: $ <%= '%.2f' % @average_earnings %>
+</p>

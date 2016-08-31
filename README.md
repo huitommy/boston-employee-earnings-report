@@ -52,7 +52,7 @@ A show page for the job title, with a list of all the partial matches for the jo
 
 ## Technology Used
 
-Application was built with Sinatra, and tests were done with RSpec, Capybara, and VCR for stubbing. Sinatra was used because of the simplicity of the application. If I had additional time, I would implement a search field on the index page that would should the details for the job title typed using AJAX. I would also add more thorough tests.
+Application was built with Sinatra, and tests were done with RSpec, Capybara, and VCR for stubbing. Sinatra was used because of the simplicity of the application. If I had additional time, I would implement a search field on the index page that would show the details for the job title typed using AJAX. I would also add more thorough tests.
 
 ## Personal Links
 
